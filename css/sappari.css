@@ -1,0 +1,536 @@
+
+/*********** 基本デザイン ***********/
+
+/* body */
+body {
+	background-color: #ffffff;
+	background-image: url("sappari_bg.png");
+	background-repeat: no-repeat;
+	background-position: top left;
+	
+	color: #333333;
+	font-size: 90%;
+	line-height: 1.4;
+	font-family: Arial,Verdana,Helvetica,sans-serif;
+	margin-top: 90px;
+	margin-left: 100px;
+}
+
+
+/* リンク */
+a:link {
+	color: #00CC00;
+	background-color: transparent;
+	text-decoration: none;
+}
+a:visited {
+	color: #009933;
+	background-color: transparent;
+	text-decoration: none;
+}
+a:hover {
+	color: #0055bb;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+
+/* h1 */
+h1
+{
+	color: White;
+	font-size: 160%;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 70px;
+}
+h1 a:link
+{
+	color: White;
+}
+h1 a:hover
+{
+	color: White;
+}
+h1 a:visited
+{
+	color: White;
+}
+
+/* 章 */
+h2
+{
+	color: Black;
+	font-size: 150%;
+	margin: 10px;
+	margin-left: 0px;
+}
+h2 a:link, h2 a:visited
+{
+	color:Black;
+}
+h2 span.date 
+{
+}
+h2 span.title 
+{
+}
+h3 
+{
+	color: #66cc00;
+	font-size: 120%;
+	margin-left: 20px;
+	font-weight: bold;
+	border-style: solid;
+	border-color: #999999;
+	border-width: 0px;
+	border-left-width: 5px;
+	padding: 5px;
+	padding-left: 10px;
+}
+h4
+{
+	margin-left: 40px;
+}
+p
+{
+	margin-left: 60px;
+	width: 500px;
+}
+
+/* リスト */
+ul
+{
+	padding-left: 15px;
+	margin-left: 70px;
+	width: 440px;
+}
+
+
+/* 線 */
+hr {
+	border-style: solid;
+	border-width: 2px 0px 0px 0px;
+	border-color: #003399;
+}
+hr.sep {
+	display: none;
+}
+
+pre {
+	background-color: #f0f0ff;
+	color: #000000;
+	margin-left: 60px;
+	padding: 8px 8px 8px 8px;
+	border-style: solid;
+	border-color: #cccccc;
+	border-width: 0px 1px 1px 0px;
+	width: 500px;
+}
+
+/* テーブル */
+table {
+	border-color: #ccc;
+	border-width: 1px;
+	padding: 0px;
+	border-collapse: collapse;
+}
+th, tr, td {
+	border-style: solid;
+	border-color: #ccc;
+	border-width: 1px;
+	padding-top: 4px;
+	padding-left: 4px;
+}
+
+/**************** Hiki tDiary ***************/
+
+
+/* 本文 */
+div.day 
+{
+	width: 440px;
+	margin-bottom: 40px;
+}
+
+/* 管理者用メニュー（編集など） */
+div.adminmenu 
+{
+	position: absolute;
+	top: 1px;
+	left: 220px;
+	width: 500px;
+	text-align: right;
+	font-size: small;
+	padding: 0px;
+}
+div.adminmenu a:link, div.adminmenu a:visited
+{
+	color: #cccccc;
+}
+span.adminmenu 
+{
+	width: 500px;
+}
+
+
+/* 本日のリンク元など */
+div.caption 
+{
+	width: 380px;
+	text-align: left;
+	font-size: 0.9em;
+}
+
+
+/* 日記のコメント表示 */
+div.comment {
+	border-style: solid;
+	border-color: #ccc;
+	border-width: 1px;
+	color: #000;
+	background-color: #eef;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	margin-left: 60px;
+	padding: 4px;
+}
+div.commentshort {
+	font-size: 0.7em;
+	/*margin-left: 2em;*/
+}
+span.commentator {
+	font-weight: bold;
+}
+div.commentshort p {
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+	line-height: 1.2em;
+}
+div.commentbody {
+	font-size: 0.9em;
+	margin: 0.5em;
+	line-height: 1.2em;
+}
+div.commentator {
+	border-style: solid;
+	border-color: #c0c0c0;
+	border-width: 0px 0px 1px 0px;
+	line-height: 1.5em;
+}
+div.commentbody p {
+	margin: 0.5em;
+}
+
+
+
+/* 日記のフォーム */
+div.form {
+	background-color: #F0F0FF;
+	color: #000000;
+	border-style: solid;
+	border-color: #c0c0c0;
+	border-width: 1px;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	padding: 2px;
+}
+div.form form {
+}
+div.form form.comment {
+	font-size: 0.9em;
+}
+div.field {
+	display: inline;
+	margin-right: 2em;
+}
+form.comment input {
+	background-color: #e0e0e0;
+	color: #000;
+	margin-left: 1em;
+}
+div.textarea {
+	display: block;
+	/*vertical-align: top;*/
+}
+form.comment textarea {
+	display: block;
+	background-color: #e0e0e0;
+	color: #000000;
+	margin-left: 3em;
+	width: 20em;
+	height: 5em;
+}
+div.button {
+	display: block;
+	margin-left: 3em;
+}
+
+
+
+
+/* リファラー */
+div.referer {
+	text-align: right;
+	font-size: xx-small;
+	color: #f08000;
+	background-color: transparent;
+	margin: 0em;
+}
+div.referer a:link {
+	color: #f08000;
+	background-color: transparent;
+}
+div.referer a:visited {
+	color: #d06000;
+	background-color: transparent;
+}
+div.refererlist {
+	background-color: #fafafa;
+	color: #f08000;
+	border-style: solid;
+	border-color: #c0c0c0;
+	border-width: 1px 0px 0px 0px;
+	padding: 2px;
+	padding-bottom: 1px;
+}
+div.refererlist a:link {
+	color: #f08000;
+	background-color: transparent;
+}
+div.refererlist a:visited {
+	color: #d06000;
+	background-color: transparent;
+}
+div.refererlist ul {
+	font-size: 0.9em;
+	margin: 0.5em 1em 0.5em 3em;
+	line-height: 1.2em;
+}
+
+
+
+
+/* フッター */
+div.footer {
+	font-size: small;
+	text-align: left;
+	margin-left: 60px;
+	margin-top: 1em;
+	clear: both;
+}
+
+
+
+
+/* 日記更新フォーム */
+form.update {
+	background-color: #F0F0FF;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+form.update form.update textarea, form.commentstat input {
+	background-color: #fff;
+	color: #000;
+}
+form.update span.field {
+	display: inline;
+	margin-left: 0em;
+	margin-right: 0.5em;
+}
+form.update div.field.title {
+	display: block;
+	margin-top: 1em;
+}
+form.update div.field.title input {
+	margin-left: 0.5em;
+}
+form.update div.textarea {
+	display: block;
+	margin-top: 1em;
+}
+form.update textarea {
+	display: block;
+	margin-left: 3em;
+	margin-bottom: 1em;
+	width: 35em;
+	height: 15em;
+}
+form.update span.checkbox.hidediary {
+	margin-left: 1em;
+}
+
+
+
+/* コメントフォーム */
+div.comment form {
+	margin-top: 0em;
+	margin-left: 3em;
+}
+p.message {
+	text-align: center;
+	font-size: large;
+	background-color: #d00;
+	color: #fff;
+	padding: 8px;
+}
+
+
+
+
+/* 本文 */
+div.body blockquote {
+	border-style: solid;
+	border-color: #CCCCCC;
+	border-width: 2px 2px 2px 2px;
+	margin-left: 60px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+div.body blockquote p 
+{
+	margin-left: 0px;
+}
+div.body ul, div.body ol
+{
+	margin-left: 70px;
+}
+div.body p
+{
+	margin-left: 60px;
+}
+div.body dl {
+	margin-left: 2em;
+}
+div.body dt {
+	border-style: solid;
+	border-color: #eef;
+	border-width: 0px 0px 2px 0px;
+	margin-top: 0.7em;
+}
+div.body dd {
+	margin: 0em 3em 0.5em 1em;
+}
+div.body span.footnote {
+	vertical-align: super;
+	font-size: 0.7em;
+}
+div.body form
+{
+	margin-left: 60px;
+}
+div.body textarea
+{
+	width: 380px;
+}
+
+
+div.recentsubtitles {
+	font-size: 0.9em;
+	margin-top: 0px;
+	margin-bottom: 1em;
+}
+
+
+
+div.footnote {
+	font-size: 0.9em;
+	border-style: solid;
+	border-color: #ccc;
+	border-width: 1px 0px 0px 0px;
+	padding: 0em;
+	margin-left: 6em;
+}
+p.footnote {
+	margin: 0.5em;
+	padding: 0em;
+}
+
+img.left {
+	border-width: 1px;
+	border-color: #000080;
+	float: left;
+	margin: 0.5em;
+}
+img.right {
+	border-width: 1px;
+	border-color: #000080;
+	float: right;
+	margin: 0.5em;
+}
+
+
+
+div.section{
+	clear: both;
+}
+
+
+
+/* Wikiのトップ */
+div.main {
+	margin-left: 0px;
+	width: 440px;
+}
+
+/* サイドバー */
+div.sidebar {
+	position: absolute;
+	top: 200px;
+	left: 580px;
+	width: 160px;
+	font-size: small;
+	padding: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: #999999;
+	border-width: 0px;
+	border-left-width: 1px;
+}
+div.sidebar ul {
+	line-height: 140%;
+}
+div.sidebar body
+{
+	margin: 20px;
+}
+div.sidebar form {
+	padding: 20px;
+}
+div.sidebar h2 {
+	font-size: 90%;
+	color: #999999;
+	padding-left: 10px;
+	border-style: solid;
+	border-color: #999999;
+	border-width: 0px;
+	border-bottom-width: 1px;
+}
+div.sidebar h3 
+{
+	border-bottom-color: #FFFFFF;
+}
+div.sidebar h5
+{
+	margin-left: 20px;
+}
+
+
+@media print {
+	body {
+		margin: 0px;
+		padding: 0px;
+		color: #000;
+		background-color: #fff;
+	}
+
+	div.adminmenu { display: none; }
+	div.comment   { display: none; }
+	div.footer    { display: none; }
+	div.main {
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+	div.sidebar { display: none; }
+	.nodisp { display: none; }
+}

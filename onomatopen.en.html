@@ -1,0 +1,134 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Onomatopen</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <style>
+
+      table {
+        border-spacing: 10px;
+      }
+      th {
+        border-bottom: 1px solid #666;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div id="header">
+      <ul class="language-selection">
+        <li class="selected">English</li>
+        <li><a href="onomatopen.ja.html">Japanese</a></li>
+      </ul>
+      <div class="logo">
+        <a href="./index.en.html">sappari.org</a>
+      </div>
+    </div>
+
+    <h1>Onomatopen</h1>
+
+    <p class="clearfix">
+      <img src="image/onomatopen-concept.png" title="concept image" style="float:right;" />
+      I developed a prototype painting system called Onomatopen, which enables the user to switch brushes and apply effects using onomatopoeia.
+      For example, if the user draws a line while saying "Zig-zag Zig-zag...", a jagged line is drawn.
+    </p>
+
+    <p>
+      <iframe width="560" height="349" src="http://www.youtube.com/embed/sV75QjBrso0" frameborder="0" allowfullscreen></iframe>
+    </p>
+
+    <h2>Functions</h2>
+
+    <p>
+      I have currently implemented 10 features using onomatopoeia.<br />
+      There are two main uses of onomatopoeia; switching brushes and editing images.
+    </p>
+
+    <p>
+      <table>
+        <tr>
+          <th>Brush</th>
+          <th>Edit/Effect</th>
+        </tr>
+        <tr>
+          <td>
+            <image src="image/onomatopen1.png" />
+          </td>
+          <td>
+            <dl>
+              <dt>"Keshi Keshi"</dt><dd>Eraser</dd>
+              <dt>"Choki Choki"</dt><dd>Cut</dd>
+              <dt>"Peta Peta"</dt><dd>Paste</dd>
+              <dt>"Copy Copy"</dt><dd>Copy</dd>
+              <dt>"Biyoon"</dt><dd>Deformation</dd>
+            </dl>
+          </td>
+        </tr>
+      </table>
+    </p>
+
+    <h2>Features</h2>
+
+    <dl>
+      <dt>
+        Multimodal Interaction
+      </dt>
+      <dd>
+        One of the important features of Onomatopen is the ability to draw lines using the voice.
+        This interaction omits explicit switching operations such as selecting a brush.
+      </dd>
+      
+      <dt>
+        Suitable mapping between operation methods and functions
+      </dt>
+      <dd>
+        Onomatopoeia is suitable for representing states of objects in a more sensory-based manner.
+        In Onomatopen, users can imagine the texture of a line or executed function more easily than by changing brushes using buttons.
+      </dd>
+      
+      <dt>Entertainment</dt>
+      <dd>
+        The above features of Onomatopen, such as appealing to sensitivity and visual/auditory feedback, are suited to the entertainment of the user.
+      </dd>
+    </dl>
+
+    <h2>Implementation</h2>
+
+    <p>
+      The voice recognition part uses <a href="http://julius.sourceforge.jp/">Julius</a>, which is an open-source voice recognition engine.
+      The Onomatopen system adopts a customized grammer for recognizing repeated onomatopoeia.
+    </p>
+
+    <h2>Application of Onomatopen</h2>
+
+    <p>
+      By applying the techniques of the Onomatopen to video game, I developed a game named "Ninja Onomato-kun".
+    </p>
+
+    <p>
+      <iframe width="425" height="349" src="http://www.youtube.com/embed/sPqLwshvXuQ" frameborder="0" allowfullscreen></iframe>
+    </p>
+
+    <h2>Download</h2>
+
+    <p>
+      <a class="download" href="file/onomatopen-win.zip">For Windows only</a>
+      <br />
+      <a class="download" href="file/onomatopen-win-linux.zip">For Windows and Linux</a>
+      <br />
+      <a href="https://github.com/kambara/Onomatopen">Source code (github.com)</a>
+    </p>
+
+    <!-- X:S ZenBackWidget --><script type="text/javascript">document.write(unescape("%3Cscript")+" src='http://widget.zenback.jp/?base_uri=http%3A//sappari.org/&nsid=96837304504575597%3A%3A96837312289233755&rand="+Math.ceil((new Date()*1)*Math.random())+"' type='text/javascript'"+unescape("%3E%3C/script%3E"));</script><!-- X:E ZenBackWidget -->
+
+    <div class="footer">
+      <span class="last-modified">Last Update: 2012-2-28 (Publish: 2008-12-05)</span><br />
+      Keisuke Kambara
+      <br />
+      <a href="http://sappari.org/">sappari.org</a>
+    </div>
+
+  </body>
+</html>

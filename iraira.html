@@ -1,0 +1,217 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>イライラボール</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="logo">
+        <a href="./index.html">sappari.org</a>
+      </div>
+    </div>
+
+    <h1>イライラボール</h1>
+
+    <p>
+    PCとWebカメラで遊べる、イライラ棒ならぬイライラボールです。
+      <br />
+      実世界にある物（ボール）とWebカメラを使った体感的なコンピュータの操作をやってみたくて作りました。
+      Processingというツールでこんな作品をお手軽に作ることができます。
+      <br />
+      ただし画像処理の勉強がてら作ったものなのでゲーム性には期待できません。あしからず。
+      <br />
+      <br />
+      <iframe width="480" height="360" src="http://www.youtube.com/embed/YoORn6uih8k" frameborder="0" allowfullscreen></iframe>
+    </p>
+
+    <h2>遊び方</h2>
+
+    <h3>ボールを準備</h3>
+    <p>
+      まず、手のひらサイズで鮮やかな色のもの（できればボール）を用意します。<br />
+      例えば、上のムービーで使用しているパーティの飾り用ボールや、テニスボールなどがいいでしょう。<br />
+      背景や服にボールと似たような色が含まれているとうまく動きません。<br />
+      <br />
+      <img src="image/colorball.jpg" />
+    </p>
+
+    <h3>ボールをトラッキング</h3>
+    <p>
+      ゲームを起動したら、ボールを画面に映し、映ったボールをクリックします。<br />
+      するとクリックした部分の色を追跡するようになります。<br />
+      ボールを動かしてみて、画面上の丸印が付いてくるようになったら準備完了です。
+    </p>
+
+    <h3>ゲームスタート</h3>
+    <p>
+      Enterキーを押すとゲームスタート。<br />
+      迫ってくるラインにボールが当たらないよう、ゴールの赤いラインを目指します。<br />
+      Enterキーを押すことで再スタートします。
+    </p>
+
+    <h2>ダウンロード</h2>
+    <p>
+      <a class="download" href="file/iraira.zip">iraira.zip (45KB)</a>
+    </p>
+
+    <h3>動作環境</h3>
+    <p>
+      Windows XP Professionalと<a href="http://www.logicool.co.jp/products/videocamera/qv_4000.html">Logitech
+      QV-4000</a>で動作確認しています。<br />
+      一応、以下を満たしていれば動くはずです。
+    </p>
+    <ul>
+      <li>Processingが動き、（Windows, Mac, Linux）</li>
+      <li>Webカメラが使える</li>
+    </ul>
+
+    <h2>インストールから起動まで</h2>
+    <p>
+      ProcessingとWebカメラが必要です。
+    </p>
+
+    <h3>Processingをダウンロード</h3>
+
+    <p>
+      <a href="http://processing.org/download/index.html">Processing1.0 ALPHA &gt;&gt;Download</a>
+      <br />
+      メールアドレスを送信すると、ダウンロードページのURLがメールで届きます。
+    </p>
+    <p>
+      また、Processingはデスクトップでは動きません。パスに日本語があるとダメなようです。
+      <br />
+      C:\Program Files\などに移してください。
+    </p>
+
+    <h3>QuickTime for Javaをインストール</h3>
+
+    <p>
+      <a href="http://www.apple.co.jp/quicktime/download/">アップル - QuickTime - ダウンロード</a>
+      <br />
+      インストール中、「詳細＞QuickTime for Java」を必ずチェックします。
+    </p>
+    <p>
+      試しにWebカメラをつないだあと、Processingで「File＞Open＞examples＞video＞camera」を開き、
+      <br />
+      「Sketch＞Run(Ctrl+S)」で実行した画面にカメラ映像が映っていればOKです。<br />
+    </p>
+
+    <h3>イライラボールをインストール</h3>
+    <p>
+      ダウンロード＆解凍したirairaフォルダを、sketchbookフォルダ内にコピーします<br />
+      フォルダ構成は以下のようになります。
+    </p>
+
+    <pre>
+      +- processing/
+      +- sketchbook/
+      |   +- iraira/ （←ここにコピーする）
+      |   |   +- iraira.pde
+      |   |   +- history.gz
+      |   |   +- data/
+      |   |
+      |   +- examples/
+      |   +- default/
+      +- fonts/
+      +- java/
+      +- lib/
+      +- reference/
+      +- processing.exe
+      +- 〜略
+    </pre>
+
+    <h3>起動</h3>
+    <p>
+      カメラをつないだあと、Processingを起動し、「File＞Open＞iraira」を開きます。<br />
+      左上の起動ボタンか「Sketch＞Run(Ctrl+R)」で実行し、カメラ映像が映っていれば成功です。
+    </p>
+
+    <h2>FAQ</h2>
+    <h3>Q. カメラをつないだけど実行できない。または何も映らない。</h3>
+    <p>
+      以下を確認してください。
+    </p>
+    <ul>
+      <li>Processing以外のアプリケーションでカメラが使えるか（カメラに付属のアプリケーションなど）</li>
+      <li>QuickTime for Javaをインストールしたか（インストール時にQuickTime for Javaをチェックしたか）</li>
+    </ul>
+
+    <p>
+      Windowsの場合<a href="http://www.vdig.com/WinVDIG/index.html">WinVDIG</a>をインストールすることでカメラを使えることもあるようです。
+      <br />
+      また、Webカメラの解像度が320x240より低い場合、
+      <br />
+      スクリプト内の
+    </p>
+
+    <pre>
+void setup() {
+  size(320, 240);
+  〜
+</pre>
+
+    <p>
+      を
+    </p>
+
+    <pre>
+void setup() {
+  size(160, 120);
+</pre>
+    <p>
+      に直してみると良いかもしれません。
+    </p>
+
+    <h2>参考ページ</h2>
+    <h3>Processing関連</h3>
+    <ul>
+      <li><a href="http://processing.org/">Processing</a></li>
+      <li><a href="http://stage.itp.tsoa.nyu.edu/%7Etk403/proce55ing_reference_jp/">Processing
+      リファレンス(日本語)</a></li>
+      <li><a href="http://stage.itp.tsoa.nyu.edu/%7Etk403/proce55ing_reference_jp/beginVideo_.html">Processing
+      API&nbsp; beginVideo() （カメラの説明）</a></li>
+    </ul>
+
+    <h3>カメラを使った作品</h3>
+    <ul>
+      <li><a href="http://www.playstation.jp/scej/title/eyetoy/">EyeToy:
+      Play (PS2)<br />
+      </a></li>
+      <li><a href="http://megaui.net/fukuchi/works/effectv/index.html">EffecTV
+      (Linux)<br />
+      </a></li>
+      <li><a href="http://db-db.com/nudemengarden/">NudemanGarden
+      (Processing)</a></li>
+      <li><a
+              href="http://processing.org/exhibition/starnursery/index_link.html">Star
+      Nursery (Processing)</a><br />
+      </li>
+    </ul>
+
+    <h3>カメラ（赤外線？）と実世界の物を使ったゲーム</h3>
+    <ul>
+      <li>
+        <a href="http://dragonquest.square-enix.co.jp/index_ssd.html">
+          剣神ドラゴンクエスト
+        </a>
+      </li>
+    </ul>
+
+    <!-- X:S ZenBackWidget --><script type="text/javascript">document.write(unescape("%3Cscript")+" src='http://widget.zenback.jp/?base_uri=http%3A//sappari.org/&nsid=96837304504575597%3A%3A96837312289233755&rand="+Math.ceil((new Date()*1)*Math.random())+"' type='text/javascript'"+unescape("%3E%3C/script%3E"));</script><!-- X:E ZenBackWidget -->
+
+    <div class="footer">
+      <span class="last-modified">
+        最終更新日: 2004-6-6 （公開日: 2004-6-6）
+      </span>
+      <br />
+      Keisuke Kambara
+      <br />
+      <a href="http://sappari.org/">sappari.org</a>
+    </div>
+
+    </body>
+  </html>
+

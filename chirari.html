@@ -1,0 +1,142 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>ちらりウィンドウ</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="logo">
+        <a href="./index.html">sappari.org</a>
+      </div>
+    </div>
+
+    <h1>ちらりウィンドウ</h1>
+
+    <p>
+      ウィンドウがいくつも重なったとき、以下のようなことで困ったことはないでしょうか。
+    </p>
+
+    <ul>
+      <li><strong>奥に隠れたウィンドウ</strong>がなかなか見つからない</li>
+      <li>隠れたウィンドウを見つけるのに、手前のウィンドウを動かしたり、最小化したりと、<strong>ウィンドウの切り替えが面倒</strong></li>
+      <li>タスクバーを見てもタイトルだけではウィンドウを見分けにくい</li>
+      <li>デスクトップのアイコンを探すのにウィンドウの位置を何度も調整するのが面倒</li>
+    </ul>
+
+    <p>
+      こんなとき、ちらりウィンドウを用いることで、陰に隠れた物を覗きこむような動きによって、<strong>素早くウィンドウを探しスムーズに切り替える</strong>ことができます。
+    </p>
+
+    <h3>使用例</h3>
+    <p>
+      <iframe width="480" height="360" src="http://www.youtube.com/embed/AaNGLKYJQ-Q" frameborder="0" allowfullscreen></iframe>
+    </p>
+    <p>
+      例えばこんな風に使うと便利です。
+    </p>
+    <ul>
+      <li>手前のウィンドウを徐々にずらして、隠れたウィンドウを覗き見るように探し、切り替える
+      <li>最大化したウィンドウの後ろを覗き見る
+      <li>ウィンドウで隠れたデスクトップのアイコンをクリック
+      <li>隠れたデスクトップに（から）ドラッグ＆ドロップ
+      <li>奥に隠れたウィンドウにドラッグ＆ドロップ
+    </ul>
+
+    <h2>メリットとデメリット</h2>
+    <h3>メリット</h3>
+    <ul>
+      <li><strong>直接的：</strong>ウィンドウの中身を直接見ながら探せる
+      <li><strong>素早い：</strong>手前のウィンドウを一つ一つちまちま動かさなくても、ぐりぐりと大雑把な操作で探せる
+      <li><strong>操作がなめらか：</strong>アナログジョイスティック操作とスムーズな動きによって、ウィンドウ切り替えモードを感じさせない
+      <li><strong>直感的：</strong>「覗きこむ」という実世界でよく用いられる動きで覚えやすい
+      <li>最大化したウィンドウでも全く同様に使える
+      <li>奥に隠れたウィンドウにドラッグ＆ドロップ、といった複雑な操作も可能
+    </ul>
+
+    <h3>デメリット</h3>
+    <ul>
+      <li>アナログジョイスティックが新たに必要</li>
+      <li>ウィンドウの一部しか見えない（逆に一部でよいとも言える）</li>
+    </ul>
+
+    <h2>特徴：視点移動によるウィンドウ操作</h2>
+    <p>
+      <img src="image/nozoki.png" style="float:right;" />
+      現実世界では陰に隠れたものを見るとき、わざわざ手前にある物を動かさなくても<strong>自分の視点を少し動かすことで覗き見る</strong>ことができます。
+      この視点移動をうまく使うことで、素早く柔軟にものを見分けることが可能になっています。
+      <br />
+      ところが現在のウィンドウシステムでは、自分の視点は固定されており、隠れたウィンドウを探すには手前にある物（ウィンドウ）をわざわざ手で動かすしかありません。
+      <br />
+      <strong>視点移動をウィンドウシステムにも採りいれる</strong>ことによってよりスムーズな作業ができるようになります。
+    </p>
+    <p>
+      その方法は単純で、アナログジョイスティックを動かすと、下の図のように手前のもの（ウィンドウ）ほど大きく動き、奥のもの（ウィンドウ）ほど小さく動きます。
+      このスピードの違いによって徐々にウィンドウの見えにずれが生じ、それまで隠れていたものが見えるようになります。
+      <br />
+      <br />
+      <img src="image/window_zure.png" />
+    </p>
+
+    <h2>新着情報</h2>
+    <ul>
+      <li>2004-8-7: <a href="chirarim.html">ちらりウィンドウ（マウス用）</a>公開
+      <ul>
+        <li>マウスだけで操作できるようにしました
+      </ul>
+      <li>2004-6-15: ちらりウィンドウ公開
+    </ul>
+
+    <h2>ダウンロード</h2>
+
+    <p>
+      <a class="download" href="file/ChirariWindow.zip">ChirariWindow.zip</a>
+      <br />
+      <a href="chirarim.html">マウス用ちらりウィンドウ</a> もあります。
+    </p>
+
+    <h3>動作に必要なもの</h3>
+    <ul>
+      <li><a href="http://www.microsoft.com/japan/msdn/netframework/downloads/">.NET Framework</a> (.NET Framework 1.1 再頒布パッケージ)
+      <li><a href="http://www.microsoft.com/japan/windows/directx/default.mspx">DirectX 9.0以降</a>
+      <li>アナログジョイスティック
+    </ul>
+
+    <h3>使い方</h3>
+    <p>
+      アナログジョイスティックをつないだあと、ChirariWindow.exeを起動してください。<br>
+      あとはジョイスティックをぐりぐり。
+    </p>
+
+    <h2>発表および紹介記事</h2>
+    <ul>
+      <li>神原啓介, 安村通晃: ちらりウィンドウ：隠れたウィンドウを覗き見る, インタラクション2004論文集. [<a href="pdf/chirariwindow_interaction2004.pdf">PDF</a>]
+
+      <li>
+        <a href="http://pcweb.mycom.co.jp/articles/2004/03/15/interaction/002.html">MYCOM PC WEB (2004-3-15)
+        </a>
+      </li>
+    </ul>
+
+    <h2>参考ページ</h2>
+    <ul>
+      <li>ぱらぱらウィンドウ[<a href="http://www.tuat.ac.jp/~nakagawa/Publication/2002/kato0302a-e.pdf">PDF</a>]</li>
+      <li><a href="http://www.ksky.ne.jp/~seahorse/mtate2/">窓立て2</a></li>
+      <li><a href="http://www.apple.co.jp/macosx/features/expose/">Expose (Apple - Mac OS X)</a></li>
+    </ul>
+
+    <!-- X:S ZenBackWidget --><script type="text/javascript">document.write(unescape("%3Cscript")+" src='http://widget.zenback.jp/?base_uri=http%3A//sappari.org/&nsid=96837304504575597%3A%3A96837312289233755&rand="+Math.ceil((new Date()*1)*Math.random())+"' type='text/javascript'"+unescape("%3E%3C/script%3E"));</script><!-- X:E ZenBackWidget -->
+
+    <div class="footer">
+      <span class="last-modified">
+        最終更新日: 2004-8-7 （公開日: 2004-6-15）
+      </span>
+      <br />
+      Keisuke Kambara
+      <br />
+      <a href="http://sappari.org/">sappari.org</a>
+    </div>
+
+  </body>
+</html>

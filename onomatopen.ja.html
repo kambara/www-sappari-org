@@ -1,0 +1,158 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>オノマトペン</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <style>
+
+      table {
+      border-spacing: 10px;
+      }
+      th {
+      border-bottom: 1px solid #666;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div id="header">
+      <ul class="language-selection">
+        <li><a href="onomatopen.en.html">English</a></li>
+        <li class="selected">Japanese</li>
+      </ul>
+      <div class="logo">
+        <a href="./index.ja.html">sappari.org</a>
+      </div>
+    </div>
+
+    <h1>オノマトペン</h1>
+
+    <p class="clearfix">
+      <img src="image/onomatopen-concept.png" title="concept image" style="float:right;" />
+      オノマトペを声に出しながら線を引くことで、そのオノマトペに応じた質感で線を描けるインタフェースです。
+      例えば「モコモコ〜」と言いながら線を引くと、モコモコした線を描くことができます。
+    </p>
+    <p>
+      <iframe width="560" height="349" src="http://www.youtube.com/embed/sV75QjBrso0" frameborder="0" allowfullscreen></iframe>
+    </p>
+
+    <ul>
+      <li><a href="movie/onomatopen.mov">高解像度版</a> (QuickTime, H.264)</li>
+      <li><a href="http://www.nicovideo.jp/watch/sm5449080">ニコニコ動画版</a></li>
+    </ul>
+
+    <h2>機能</h2>
+
+    <p>
+      オノマトペに応じて以下のようなブラシで線を描くことができます。<br />
+      また、コピー＆ペーストのような編集操作や、
+      写真の変形といった画像加工にもオノマトペを使います。
+    </p>
+
+    <p>
+      <table>
+        <tr>
+          <th>ブラシ</th>
+          <th>編集・画像加工</th>
+        </tr>
+        <tr>
+          <td>
+            <image src="image/onomatopen1.png" />
+          </td>
+          <td>
+            <dl>
+              <dt>「消し消し」</dt><dd>消しゴム</dd>
+              <dt>「チョキチョキ」</dt><dd>切り取り</dd>
+              <dt>「ペタペタ」</dt><dd>貼り付け</dd>
+              <dt>「コピコピ」</dt><dd>コピー</dd>
+              <dt>「びよ〜ん」</dt><dd>変形</dd>
+            </dl>
+          </td>
+        </tr>
+      </table>
+    </p>
+
+    <h2>特徴</h2>
+
+    <dl>
+      <dt>マルチモーダル・モードレス</dt>
+      <dd>
+        ボタンやショートカットを使った明示的な切り替えが必要ありません。
+        操作から操作へスムーズに移行できます。
+      </dd>
+      <dt>機能と入力の感覚的なマッピング</dt>
+      <dd>
+        機能と入力の対応付けが分かりやすく、入力した結果描かれる線をイメージしやすくなっています。
+      </dd>
+      <dt>エンターテイメント</dt>
+      <dd>絵を描くのが楽しくなるかも</dd>
+    </dl>
+
+    <h2>実装</h2>
+
+    <p>
+      音声認識にはオープンソースの音声認識エンジン<a href="http://julius.sourceforge.jp/">Julius</a>を使っています。
+      <a href="http://julius.sourceforge.jp/index.php?q=doc/grammar.html">Julius用認識文法</a>を作成することで、「ギザギザ」といったオノマトペだけを認識しています。<br />
+      また、Juliusを<a href="http://julius.sourceforge.jp/juliusbook/ja/desc_module.html">モジュールモード</a> (サーバーモード) で動かすことで、
+      クライアントのペイントソフトにTCP/IP経由で音声認識結果を送っています。
+    </p>
+
+    <h2>応用</h2>
+
+    <p>
+      オノマトペンの技術・操作方法を応用して、オノマトペを声に出すことで操作するゲーム：オノマトゲー「忍者オノマトくん」を作りました。
+    </p>
+
+    <p>
+      <iframe width="425" height="349" src="http://www.youtube.com/embed/sPqLwshvXuQ" frameborder="0" allowfullscreen></iframe>
+      <br/>
+      <a href="http://www.nicovideo.jp/watch/sm14668093">ニコニコ動画版</a>
+    </p>
+
+    <h2>ダウンロード</h2>
+
+    <p>
+      <a class="download" href="file/onomatopen-win.zip">
+        Windows版のみ
+      </a>
+      <br />
+      <a class="download" href="file/onomatopen-win-linux.zip">
+        Windows版 + Linux版
+      </a>
+      <br />
+      <a href="https://github.com/kambara/Onomatopen">ソースコード（github.com）</a></li>
+    </p>
+
+    <h2>論文</h2>
+
+    <ul>
+      <li>
+        神原啓介, 塚田浩二, "オノマトペを用いたマルチモーダルインタラクション", 2011年度 人工知能学会全国大会（第25回, JSAI2011）論文集, 1C2-OS4b-12, Jun. 2011.
+        (<a href="pdf/onomatopen_jsai2011.pdf">PDF</a>)
+      </li>
+      <li>
+        神原啓介, 塚田浩二, "オノマトペン", 日本ソフトウェア科学会 論文誌（コンピュータソフトウェア）, Vol.27, No.1, pp.48-55, 岩波書店, Feb. 2010.
+        (<a href="pdf/onomatopen_jssst.pdf">PDF</a>)
+      </li>
+      <li>
+        神原啓介, 塚田浩二, "オノマトペン", ソフトウェア科学会 WISS 2008 登壇発表, pp.79-84, Nov.2008.
+        (<a href="pdf/onomatopen_wiss2008.pdf">PDF</a>)
+      </li>
+    </ul>
+
+    <!-- X:S ZenBackWidget --><script type="text/javascript">document.write(unescape("%3Cscript")+" src='http://widget.zenback.jp/?base_uri=http%3A//sappari.org/&nsid=96837304504575597%3A%3A96837312289233755&rand="+Math.ceil((new Date()*1)*Math.random())+"' type='text/javascript'"+unescape("%3E%3C/script%3E"));</script><!-- X:E ZenBackWidget -->
+
+    <div class="footer">
+      <span class="last-modified">
+        最終更新日:2011-6-6 (公開日: 2008-12-05)
+      </span>
+      <br />
+      Keisuke Kambara
+      <br />
+      <a href="http://sappari.org/">sappari.org</a>
+    </div>
+
+  </body>
+</html>

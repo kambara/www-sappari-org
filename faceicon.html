@@ -1,0 +1,178 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>ソーシャル顔アイコン</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script type="text/javascript" src="js/swfobject-1.5.js"></script>
+  </head>
+  <body>
+
+    <div id="header">
+      <div class="logo">
+        <a href="./index.html">sappari.org</a>
+      </div>
+    </div>
+
+    <h1>ソーシャル顔アイコン</h1>
+    <p>
+      <img src="img/faceicon/socialfaceicon-screenshot-2-small.png" style="float:right; margin-left: 10px;" />
+      TwitterやFacebook上の友達をアイコンにしてデスクトップに置けるクライアントソフトです。
+      <br />
+      気になるあの人の近況をウィンドウを開くことなく一目でチェックでき、タイムラインに埋もれてしまうこともありません。
+      「人間軸で見る」「邪魔にならない」「アイコン風のシンプルな操作」をコンセプトにしています。
+    </p>
+
+    <p>
+      <iframe width="560" height="315" src="http://www.youtube.com/embed/NBWuXhxPBag" frameborder="0" allowfullscreen></iframe>
+    </p>
+
+    <h2>インストール</h2>
+
+    <p class="clearfix">
+      <span style="float:left; margin-right: 10px;">
+
+        <!-- BEGIN EMBED CODE -->
+	<!-- IMPORTANT: Make sure you also copy the swfobject script tag from the head above -->
+	
+	<span id="flashcontent" style="width:215px; height:180px; color: red;">
+          <strong>JavaScriptが無効、もしくはFlashのバージョンが低いためダウンロードできません。</strong><br />
+          JavaScriptを有効にするか、もしくは最新のFlashをインストールして下さい。
+	</span>
+
+	<script type="text/javascript">
+          // <![CDATA[
+          
+          // version 9.0.115 or greater is required for launching AIR apps.
+          var so = new SWFObject("swf/AIRInstallBadge.swf", "Badge", "215", "180", "9.0.115", "#FFFFFF");
+          so.useExpressInstall("swf/expressinstall.swf");
+          
+          // these parameters are required for badge install:
+          so.addVariable("airversion", "1.5"); // version of AIR runtime required
+          so.addVariable("appname", "Social Face Icon"); // application name to display to the user
+          so.addVariable("appurl", "http://cloud.github.com/downloads/kambara/SocialFaceIcon/SocialFaceIcon-beta1.2.3.air"); // absolute URL (beginning with http or https) of the application ".air" file
+          
+          // these parameters are required to support launching apps from the badge (but optional for install):
+          so.addVariable("appid", "SocialFaceIcon"); // the qualified application ID (ex. com.gskinner.air.MyApplication)
+          so.addVariable("pubid", ""); // publisher id
+          
+          // this parameter is required in addition to the above to support upgrading from the badge:
+          so.addVariable("appversion", ""); // AIR application version
+          
+          // these parameters are optional:
+          so.addVariable("image", "img/faceicon/download.png"); // URL for an image (JPG, PNG, GIF) or SWF to display in the badge (205px wide, 170px high)
+          so.addVariable("appinstallarg", "installed from web"); // passed to the application when it is installed from the badge
+          so.addVariable("applauncharg", "launched from web"); // passed to the application when it is launched from the badge
+          so.addVariable("helpurl", "help.html"); // optional url to a page containing additional help, displayed in the badge's help screen
+          so.addVariable("hidehelp", "true"); // hides the help icon if "true"
+          so.addVariable("skiptransition", "false"); // skips the initial transition if "true"
+          so.addVariable("titlecolor", "#FFFFFF"); // changes the color of titles
+          so.addVariable("buttonlabelcolor", "#33FF33"); // changes the color of the button label
+          so.addVariable("appnamecolor", "#FFFFFF"); // changes the color of the application name if the image is not specified or loaded
+          
+          // these parameters allow you to override the default text in the badge:
+          // supported strings: str_error, str_err_params, str_err_airunavailable, str_err_airswf, str_loading, str_install, str_launch, str_upgrade, str_close, str_launching, str_launchingtext, str_installing, str_installingtext, str_tryagain, str_beta3, str_beta3text, str_help, str_helptext
+          so.addVariable("str_err_airswf", "<u>Running locally?</u><br/><br/>The AIR proxy swf won't load properly when this demo is run from the local file system."); // overrides the error text when the AIR proxy swf fails to load
+          
+          so.write("flashcontent");
+          
+          // ]]>
+	</script>
+        <!-- END EMBED CODE -->
+
+      </span>
+      ←の「Install Now」をクリックすると <a href="http://get.adobe.com/air/">Adobe AIR</a> および最新のソーシャル顔アイコンをまとめてインストールできます。
+      <br />
+      Windows、Mac OS X、Linuxで動作します。
+      <span style="font-size: 80%;"><a href="http://www.adobe.com/jp/products/air/systemreqs/">※詳細</a></span>
+    </p>
+
+    <aside>
+      もし上のインストールがうまくいかない場合は、以下をお試し下さい。
+      <ul>
+        <li>
+          先に <a href="http://get.adobe.com/air/">Adobe AIR</a> をインストール
+          <ul>
+            <li><a href="http://www.adobe.com/jp/support/kb/ts/235/ts_235089_ja-jp.html">64ビット版Linuxにインストールする場合</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="http://cloud.github.com/downloads/kambara/SocialFaceIcon/SocialFaceIcon.air">ソーシャル顔アイコンインストーラ</a> をダウンロード、インストール
+        </li>
+      </ul>
+    </aside>
+
+    <h3>ソースコード</h3>
+    <p>
+      <a href="http://github.com/kambara/SocialFaceIcon">github.com</a> にてソースコードを公開しています。
+    </p>
+
+    <h2>使い方</h2>
+
+    <ol>
+      <li>
+        起動後、画面下のDockの中にある「Friends」ボタンを押して友達一覧を表示。<br />
+        <img src="img/faceicon/friends-button.png" />
+      </li>
+      <li>
+        Twitterなどのアカウントを入力し、アイコンをデスクトップにドラッグ＆ドロップ。<br />
+        <img src="img/faceicon/friends-window-drag-small.png" />
+      </li>
+      <li>終了するときは、タスクトレイの「顔」アイコンまたはDockを右クリックし「Exit」を選びます。</li>
+    </ol>
+
+    <h3>アイコンっぽい操作</h3>
+    <ul>
+      <li>アイコンをクリックすると全文が表示されます</li>
+      <li>アイコンをダブルクリックするとその人のページが開きます</li>
+      <li>
+        アイコンを右クリックすると過去の発言が表示されます<br />
+        <img src="img/faceicon/chirami-3-small.png" />
+      </li>
+    </ul>
+
+    <h3>「くっつきアイコン」で分類・整理</h3>
+    <p>
+      アイコン同士をくっつけるとまとまります。<br />
+      <img src="img/faceicon/group-drag-small.png" style="vertical-align: top;" />
+      <img src="img/faceicon/group-3-small.png" />
+      <br />
+      さらに左上の「―」ボタンを押すと、アイコンを重ねてコンパクトに。<br />
+      <img src="img/faceicon/pile-2-small.png" />
+    </p>
+
+    <h3>特に気になる人は「人間Dock」へ</h3>
+    <p>
+      画面端の専用Dockにアイコンを入れておけば、画面端にカーソルを動かすだけですぐに様子をチェックできます。<br />
+      <img src="img/faceicon/dock-1-small.png" />
+    </p>
+
+    <h2>関連ページ</h2>
+    <ul>
+      <li><a href="http://mobiquitous.com/faceicon/">顔アイコン: 手軽なファイル転送システム</a>（元ネタ）</li>
+    </ul>
+
+    <h2>論文</h2>
+
+    <ul>
+      <li>
+        神原啓介, 塚田浩二, "ソーシャル顔アイコン", 日本ソフトウェア科学会論文誌（コンピュータソフトウェア）, Vol.28, No.2, pp.172-182, 岩波書店, May. 2011.
+        (<a href="pdf/socialfaceicon_jssst.pdf">PDF</a>)
+      </li>
+      <li>
+        神原啓介, 塚田浩二, "ソーシャル顔アイコン", ソフトウェア科学会 WISS 2009 登壇発表, pp.53-56, Dec.2009.
+        (<a href="pdf/socialfaceicon_wiss2009.pdf">PDF</a>)
+      </li>
+    </ul>
+
+    <!-- X:S ZenBackWidget --><script type="text/javascript">document.write(unescape("%3Cscript")+" src='http://widget.zenback.jp/?base_uri=http%3A//sappari.org/&nsid=96837304504575597%3A%3A96837312289233755&rand="+Math.ceil((new Date()*1)*Math.random())+"' type='text/javascript'"+unescape("%3E%3C/script%3E"));</script><!-- X:E ZenBackWidget -->
+
+    <div class="footer">
+      <span class="last-modified">最終更新日:2009-11-29 (公開日: 2009-11-08)</span><br />
+      Keisuke Kambara
+      <br />
+      <a href="http://sappari.org/">sappari.org</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>なめらかアルバム</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  <body>
+
+    <div id="header">
+      <div class="logo">
+        <a href="./index.html">sappari.org</a>
+      </div>
+    </div>
+
+    <h1>なめらかアルバム</h1>
+
+    <p>
+      本をパラパラとめくりながら見るように、スムーズに画像を動かしながら見る写真集です。
+    </p>
+    <p>
+      <a href="http://sappari.org/flash/motorshow2003/">なめらかアルバムのサンプルを表示：東京モーターショー2003</a>
+      <br />
+      <a href="http://sappari.org/flash/motorshow2003/"><img src =" http://sappari.org/image/nameraka_album.png" alt =" なめらかアルバム" /></a>
+    </p>
+    <p>
+      HTMLの写真集ではサムネイル画像を何度もクリックして大きな画像を開いたり画面を切り替えないといけません。もし全部の画像を切り替えて見ようとすると大変な作業になってしまいます。
+    </p>
+    <p>そこで、サムネイルと大きな画像の切り替えや、他の画像に切り替える操作や動きをなめらかなものにすることによって、たくさんの画像をシンプルかつ少ない操作で見られる写真集を作りました。
+    </p>
+
+    <p>このズーミングナビゲーションの手法は、東大の<a href="http://sappari.org/hiki/hiki.cgi?%B8%DE%BD%BD%CD%F2%B7%F2%C9%D7">五十嵐健夫</a>氏らの開発された<a href="http://www-ui.is.s.u-tokyo.ac.jp/~takeo/research/autozoom/autozoom-j.htm">移動速度に応じた自動ズーミング</a>を参考にさせて頂きました。</p>
+
+    <h2>オリジナルなめらかアルバムを作る</h2>
+
+    <h3>Windowsの場合</h3>
+
+    <p>
+      「<a href="namaker.html">なめらかアルバムメーカー</a>」をご利用下さい。
+    </p>
+
+    <!--
+        <p>
+        <a href="http://sappari.org/file/ImageViewer.zip">ImageViewer.zip</a>をダウンロード後、解凍。
+        </p>
+        <p>
+        解凍したswfやbatファイルと同じフォルダに画像(JPEG)を置きます。<br>
+        photo.batを実行し、photo.txtを生成します。
+        </p>
+        <p>swfを開くとなめらかアルバムのできあがり!</p>
+        <pre>美崎薫さんがphoto.batを作ってくださいました。感謝です。
+        </pre>
+        //-->
+
+    <h3>Mac, UNIXまたは手動で作る場合</h3>
+
+    <p>
+      <a class="download" href="file/NamerakaAlbum.zip">NamerakaAlbum.zip</a>
+      <br />
+      解凍して、その中のファイルと同じディレクトリに画像(JPEG)を置きます。
+      <br />
+      次のような画像ファイル名（もしくはパス）を並べたテキストを作り、
+    </p>
+    <pre>
+a.jpg
+b.jpg
+c.jpg
+...
+z.jpg</pre>
+    <p>
+      それを画像やswfと同じディレクトリに「photo.txt」という名前で保存します。
+      <br />
+      文字コードはSJISで、改行コードはなんでもOK。
+    </p>
+
+    <p>コマンドでリストを作ると↓こんな感じでしょうか。ただし文字コードに注意。</p>
+    <pre>ls *.jpg &gt; photo.txt</pre>
+    <p>htmlを開くとなめらかアルバムのできあがり。</p>
+
+    <h3>補足</h3>
+    <p>
+      画像リストを次のように書くと、画像へのリンクを張ることができます。
+    </p>
+    <pre>
+a.jpg|original_a.jpg
+b.jpg|original_b.jpg
+thumb/c.jpg|original/c.jpg    <- パスでもOK
+...</pre>
+
+    <p>
+      また、config.txtを書き換えることでアルバムの色などを変えることができます。
+    </p>
+
+    <h2>ソース</h2>
+
+    <p>
+      <a class="download" href="file/NamerakaAlbum_src.zip">NamerakaAlbum_src.zip</a>
+      <br />
+      なめらかアルバムのソースファイル（FlashMX）です。プログラムの改造などにご利用下さい。
+    </p>
+
+    <h2>関連リンク</h2>
+
+    <ul>
+      <li>
+        <a href="http://www-ui.is.s.u-tokyo.ac.jp/~takeo/research/autozoom/autozoom-j.htm">移動速度に応じた自動ズーミングによる効率的ナビゲーション</a>
+      </li>
+      <ul>
+        <li>
+          &quot;Speed-dependent Automatic Zooming for Browsing Large Documents&quot;, ACM UIST'00 
+          <a href="http://www-ui.is.s.u-tokyo.ac.jp/~takeo/papers/uist2000.pdf">PDF</a>
+        </li>
+      </ul>
+      <li><a href="http://www.namazu.org/~satoru/zphoto/">zphoto:ズーミングする写真集を作るツール</a></li>
+      <li><a href="http://www.hirax.net/cgi-bin/wiki.cgi?jphoto">jphoto</a>・<a href="http://www.hirax.net/cgi-bin/wiki.cgi?jphoto2">jphoto2</a></li>
+    </ul>
+
+    <!-- X:S ZenBackWidget --><script type="text/javascript">document.write(unescape("%3Cscript")+" src='http://widget.zenback.jp/?base_uri=http%3A//sappari.org/&nsid=96837304504575597%3A%3A96837312289233755&rand="+Math.ceil((new Date()*1)*Math.random())+"' type='text/javascript'"+unescape("%3E%3C/script%3E"));</script><!-- X:E ZenBackWidget -->
+
+    <div class="footer">
+      <span class="last-modified">
+        最終更新日: 2004-11-10 （公開日: 2004-8-20）
+      </span>
+      <br />
+      Keisuke Kambara
+      <br />
+      <a href="http://sappari.org/">sappari.org</a>
+    </div>
+
+    </body>
+  </html>

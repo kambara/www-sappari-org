@@ -1,0 +1,1 @@
+ImageHeightPercent=80&BackgroundColor=0x005100&ImageBorderWidth=8&ImageBorderColor=0xFFFFFF&ArrowColor=0xFFFFFF&ScreenBorderColor=0x8C8C00&ScrollbarColor=0xFFFFBF
